@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros Diarios - Diario de Viaje</title>
+    <link rel="stylesheet" href="/public/css/other.css">
+</head>
+<body>
+    <div class="navbar-vertical">
+        <a href="/public/views/home.html">Home</a>
+        <a href="/public/views/other.html">Otros Diarios</a>
+        <a href="/public/views/profile.html">Mi Perfil</a>
+        <a href="#" id="logoutButton">Cerrar Sesión</a>
+    </div>
+    <div class="header">
+        <h1 class="banner-text">Diario de Viaje</h1>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar diarios...">
+                    <select>
+                        <option value="" disabled selected>Filtrar por ubicación</option>
+                        <option value="ciudad">Ciudad</option>
+                        <option value="pais">País</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Filtrar por categoría</option>
+                        <option value="restaurante">Restaurante</option>
+                        <option value="museo">Museo</option>
+                        <option value="plaza">Plaza</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Filtrar por popularidad</option>
+                        <option value="mas_populares">Más populares</option>
+                        <option value="menos_populares">Menos populares</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Filtrar por fecha</option>
+                        <option value="recientes">Más recientes</option>
+                        <option value="antiguos">Más antiguos</option>
+                    </select>
+                </div>
+                <div class="diary-container">
+                    <div class="diary">
+                        <h3>Diario de Amigo 1</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                    <div class="diary">
+                        <h3>Diario de Amigo 2</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                    <div class="diary">
+                        <h3>Diario de Amigo 3</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                    <div class="diary">
+                        <h3>Explorar Diario 1</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                    <div class="diary">
+                        <h3>Explorar Diario 2</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                    <div class="diary">
+                        <h3>Explorar Diario 3</h3>
+                        <p>Previsualización de la memoria...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/scripts/logout.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Diario de Viaje</title>
+    <link rel="stylesheet" href="/public/css/profile.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/public/views/home.html">Home</a>
+        <a href="/public/views/other.html">Otros Diarios</a>
+        <a href="/public/views/profile.html">Mi Perfil</a>
+        <a href="#" id="logoutButton">Cerrar Sesión</a>
+    </div>
+    <div class="profile-header">
+        <div class="cover-photo" style="background-image: url('/public/recursos/viaja.jpg');"></div>
+        <div class="profile-photo" style="background-image: url('/public/recursos/gato.jpg');"></div>
+    </div>
+    <div class="profile-info">
+        <h2>Nombre del Usuario</h2>
+        <p>Descripción breve del usuario</p>
+        <p>Seguidos: 100 | Seguidores: 200</p>
+    </div>
+    <div class="profile-actions">
+        <button>Editar Información</button>
+        <button>Configuración</button>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="create-memory">
+                <h2>Crear Memoria</h2>
+                <textarea id="memoryText" placeholder="¿Qué estás pensando?" rows="4"></textarea>
+                <input type="file" id="memoryImage" accept="image/*">
+                <button id="publishButton">Publicar</button>
+            </div>
+            <div id="memoriesContainer">
+                <!-- Aquí se añadirán las memorias publicadas -->
+            </div>
+        </div>
+    </div>
+    <script src="/public/scripts/profile.js"></script>
+    <script src="/public/scripts/logout.js" defer></script>
+</body>
+</html>
+

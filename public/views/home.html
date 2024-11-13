@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Diario de Viaje</title>
+    <link rel="stylesheet" href="/public/css/home.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="banner-text">Diario de Viaje</h1>
+    </div>
+    <div class="container">
+        <div class="navbar-vertical">
+            <a href="/public/views/home.html">Home</a>
+            <a href="/public/views/other.html">Otros Diarios</a>
+            <a href="/public/views/profile.html">Mi Perfil</a>
+            <a href="#" id="logoutButton">Cerrar Sesión</a>
+        </div>
+        <div class="content">
+            <div class="create-memory">
+                <h2>Crear Memoria</h2>
+                <textarea id="memoryText" placeholder="¿Qué estás pensando?" rows="5"></textarea>
+                <input type="file" id="memoryImage" accept="image/*">
+                <button id="publishButton">Publicar</button>
+            </div>
+            <div id="memoriesContainer">
+                <div class="memory-card">
+                    <p>Que bonita postal, Japon ahora es mi lugar favorito. Monte Fuji. Japon</p>
+                    <img src="/public/recursos/monte-fuji-japon.jpg" alt="monte-fuji-japon">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Que nadie les diga que Rusia, es frio y sin color, vean lo hermoso que es La plaza roja de Moscu!</p>
+                    <img src="/public/recursos/plaza-roja-moscu-rusia.jpg" alt="plaza-roja-moscu-rusia">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Es impresionate el arte de los romanos</p>
+                    <img src="/public/recursos/coliseo-roma-italia.jpg" alt="coliseo-roma-italia">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Esta muy helado arriba, no logre terminar subir el Monte Everest, pero es precioso</p>
+                    <img src="/public/recursos/monte-everest-nepal-y-china.jpg" alt="Aventura en la montaña">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Una de las maravillas del mundo, esta en mi Pais!! El chichen-itza, Yucatan, Mexico</p>
+                    <img src="/public/recursos/chichen-itza-yucatan-mexico.jpg" alt="chichen-itza-yucatan-mexico">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Fiesta de cumpleaños en las vegas!!</p>
+                    <img src="/public/recursos/el-strip-las-vegas-eeuu.jpg" alt="Fiesta de cumpleaños">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Que lugar tan bonito, la ciudad del vaticano</p>
+                    <img src="/public/recursos/ciudad-del-vaticano.jpg" alt="ciudad-del-vaticano">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>La ciudad Prohibida, nadamas la habia visto en la pelicula de Karate Kid y hoy la tengo frente a mi!</p>
+                    <img src="/public/recursos/ciudad-prohibida-beijing-china.jpg" alt="ciudad-prohibida-beijing-china">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Bastante arena, pero vale la pena por conocer las piramides de Egipto, Las priamides mas grandes del mundo!</p>
+                    <img src="/public/recursos/gran-piramide-de-guiza-egipto.jpg" alt="Fiesta de cumpleaños">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Es gigantescooo!! - El Cristo Redentor</p>
+                    <img src="/public/recursos/cristo-redentor-rio-de-janeiro-brasil.jpg" alt="cristo-redentor-rio-de-janeiro-brasil">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Sabia que la Muralla China era grande, pero es mas grande aun de lo que imaginaba, wooow</p>
+                    <img src="/public/recursos/gran-muralla-china.jpg" alt="gran-muralla-china">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Es muy bonito el gran palacio de Bangkok</p>
+                    <img src="/public/recursos/gran-palacio-de-bangkok-tailandia.jpg" alt="gran-palacio-de-bangkok-tailandia">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Una de las maravillas del Mundo, Ahora entiendo porque lo es, que bonito el Machu Picchu</p>
+                    <img src="/public/recursos/machu-picchu-peru.jpg" alt="machu-picchu-peru">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>Aun me pregunto, como es que la torre de pisa, no se cae</p>
+                    <img src="/public/recursos/torre-de-pisa-italia.jpg" alt="torre-de-pisa-italia">
+                    <button>Borrar</button>
+                </div>
+                <div class="memory-card">
+                    <p>La torre Eiffel, siempre habia soñado con estar aqui</p>
+                    <img src="/public/recursos/torre-eiffel-paris-francia.jpg" alt="torre-eiffel-paris-francia">
+                    <button>Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/scripts/home.js"></script>
+    <script src="/public/scripts/logout.js" defer></script>
+</body>
+</html>

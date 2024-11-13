@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/public/css/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Registro</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="primer_apellido" placeholder="Primer Apellido" required>
+                <input type="text" name="segundo_apellido" placeholder="Segundo Apellido" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" required>
+                <input type="number" id="edad" name="edad" placeholder="Edad" readonly>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="celular" placeholder="Celular" required>
+                <input type="text" name="lugar" placeholder="Lugar" required>
+            </div>
+            <div class="form-group">
+                <select name="genero" required>
+                    <option value="" disabled selected>Género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <select name="tipo_usuario" required>
+                    <option value="" disabled selected>Tipo de Usuario</option>
+                    <option value="viajero">Viajero</option>
+                    <option value="turista">Turista</option>
+                    <option value="explorador">Explorador</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="nombre_usuario" placeholder="Nombre de Usuario" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+            </div>
+            <textarea name="descripcion" placeholder="Descripción" rows="3"></textarea>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <script src="/public/scripts/register.js"></script>
+</body>
+</html>
