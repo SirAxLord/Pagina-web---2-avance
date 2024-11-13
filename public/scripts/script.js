@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Verificación de credenciales
-        if (email === 'axel@example.com' && password === '123456') {
+        if (email === 'user@example.com' && password === '123456') {
             window.location.href = '/public/views/home.html';
         } else {
             alert('Error al iniciar sesión: Correo o contraseña incorrectos');
